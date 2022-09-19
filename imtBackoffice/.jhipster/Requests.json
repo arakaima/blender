@@ -1,0 +1,38 @@
+{
+  "name": "Requests",
+  "fields": [
+    {
+      "fieldName": "inspectionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "datetime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "requests",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "imtBackoffice",
+    "imtGateway"
+  ]
+}

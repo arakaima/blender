@@ -1,0 +1,17 @@
+{
+  "name": "Deficiency",
+  "fields": [],
+  "relationships": [],
+  "entityTableName": "deficiency",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "imtBackoffice",
+    "imtGateway"
+  ]
+}

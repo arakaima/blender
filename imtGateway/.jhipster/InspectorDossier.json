@@ -1,0 +1,46 @@
+{
+  "name": "InspectorDossier",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "inspectorId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dossierId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inspectorRole",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expertId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numberOfDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "inspectorEmployer",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "inspector_dossier",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "imtBackoffice",
+    "imtGateway"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "RiskAssessment",
+  "fields": [],
+  "relationships": [],
+  "entityTableName": "risk_assessment",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "imtBackoffice",
+    "imtGateway"
+  ]
+}
