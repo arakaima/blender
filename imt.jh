@@ -1,0 +1,200 @@
+ entity Inspection{
+      id Integer
+      startDate LocalDate
+      endDate LocalDate
+      inspectionReport String
+      theoreticalDays Integer
+      plannedDays Integer
+      actor String
+      inspectionStatus String
+  }
+  entity InspectionType {
+      id Integer
+      nameFr String
+      nameEn String
+      nameNl String
+      nameDe String
+      deprecated Boolean
+  }
+
+  entity Dossier{
+      id Integer
+      dossierNumber String
+      description String
+      dossierType String
+      dossierStatus String
+      inspectionEntity String
+
+  }
+  entity DossierType{
+      id Integer
+      nameFr String
+      nameEn String
+      nameNl String
+      nameDe String
+      deprecated Boolean
+  }
+  entity DossierStatus{
+      id Integer
+      nameFr String
+      nameEn String
+      nameNl String
+      nameDe String
+      deprecated Boolean
+  }
+
+  entity InspectorDossier{
+      id Integer
+      inspectorId String
+      dossierId String
+      inspectorRole String
+      expertId String
+      numberOfDays Integer
+      inspectorEmployer String
+  }
+  entity Requests{
+      inspectionId String
+      title String
+      datetime LocalDate
+      id Integer
+      status String
+  }
+  entity RequestsMessage{
+      id Integer
+      requestId String
+      datetime LocalDate
+      message String
+      author String
+
+  }
+  entity Note{
+      id Integer
+      noteNumber String
+      sendDate LocalDate
+      Label String
+      Status String
+  }
+  entity InspectionReport{
+
+  }
+
+  entity InspectionReport{
+
+  }
+  entity Inspector{
+
+  }
+  entity Expert{
+
+  }
+  entity RiskAssessment{
+
+  }
+  entity Capa{
+
+  }
+  entity CapaDocument{
+  }
+  entity Deficiency{}
+  entity AttachedDocument{}
+  entity Message{}
+  entity Organization{}
+  entity Location{}
+  entity Activity{}
+  entity Site{}
+  entity OrganizationDocument{}
+  entity ContactPerson{}
+application {
+  config {
+    applicationType microservice
+    authenticationType oauth2
+    baseName imtBackoffice
+    packageName be.fgov.famhp.imt.backoffice
+    buildTool maven
+    cacheProvider hazelcast
+    clientPackageManager npm
+    databaseType mongodb
+    devDatabaseType mongodb
+    prodDatabaseType mongodb
+    searchEngine false
+    enableSwaggerCodegen false
+    enableHibernateCache false
+    serverPort 8091
+    serviceDiscoveryType eureka
+    dtoSuffix DTO
+    websocket false
+    enableTranslation true
+  }
+  entities Inspection,InspectionType,Dossier,DossierType, DossierStatus,InspectorDossier,Requests, RequestsMessage,Note, InspectionReport,InspectionReport,Inspector, Expert,RiskAssessment,Capa,CapaDocument,Deficiency,AttachedDocument,Message,Organization,Location,Activity,Site,OrganizationDocument,ContactPerson
+}
+application {
+  config {
+    applicationType microservice
+    authenticationType oauth2
+    baseName imtOutbox
+    packageName be.fgov.famhp.imt.outbox
+    buildTool maven
+    cacheProvider hazelcast
+    clientPackageManager npm
+    databaseType mongodb
+    devDatabaseType mongodb
+    prodDatabaseType mongodb
+    searchEngine false
+    enableSwaggerCodegen false
+    enableHibernateCache false
+    serverPort 8092
+    serviceDiscoveryType eureka
+    dtoSuffix DTO
+    websocket false
+    enableTranslation true
+  }
+}
+application {
+  config {
+    applicationType microservice
+    authenticationType oauth2
+    baseName imtProxy
+    packageName be.fgov.famhp.imt.proxy
+    buildTool maven
+    cacheProvider hazelcast
+    clientPackageManager npm
+    databaseType mongodb
+    devDatabaseType mongodb
+    prodDatabaseType mongodb
+    searchEngine false
+    enableSwaggerCodegen false
+    enableHibernateCache false
+    serverPort 8094
+    serviceDiscoveryType eureka
+    dtoSuffix DTO
+    websocket false
+    enableTranslation true
+  }
+}
+application {
+  config {
+    applicationType gateway
+    authenticationType jwt
+    baseName imtGateway
+    packageName be.fgov.famhp.imt.gateway
+    buildTool maven
+    cacheProvider no
+    clientPackageManager npm
+    databaseType mongodb
+    devDatabaseType mongodb
+    prodDatabaseType mongodb
+    searchEngine false
+    enableSwaggerCodegen false
+    enableHibernateCache false
+    serverPort 8080
+    serviceDiscoveryType eureka
+    dtoSuffix DTO
+    websocket false
+    enableTranslation false
+    nativeLanguage en
+  }
+  entities Inspection,InspectionType,Dossier,DossierType, DossierStatus,InspectorDossier,Requests, RequestsMessage,Note, InspectionReport,Inspector, Expert,RiskAssessment,Capa,CapaDocument,Deficiency,AttachedDocument,Message,Organization,Location,Activity,Site,OrganizationDocument,ContactPerson
+  skipClient InspectionType,DossierType, DossierStatus,CapaDocument,Organization,Location,Activity,Site,OrganizationDocument,ContactPerson
+  
+}
+
