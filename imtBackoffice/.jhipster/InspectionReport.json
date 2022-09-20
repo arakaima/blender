@@ -1,0 +1,17 @@
+{
+  "name": "InspectionReport",
+  "fields": [],
+  "relationships": [],
+  "entityTableName": "inspection_report",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "imtBackoffice",
+    "imtGateway"
+  ]
+}

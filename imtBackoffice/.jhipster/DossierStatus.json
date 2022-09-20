@@ -1,0 +1,38 @@
+{
+  "name": "DossierStatus",
+  "fields": [
+    {
+      "fieldName": "nameFr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameNl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameDe",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deprecated",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "dossier_status",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "imtBackoffice",
+    "imtGateway"
+  ]
+}

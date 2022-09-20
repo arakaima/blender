@@ -1,0 +1,34 @@
+{
+  "name": "Note",
+  "fields": [
+    {
+      "fieldName": "noteNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sendDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "note",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "imtBackoffice",
+    "imtGateway"
+  ]
+}
