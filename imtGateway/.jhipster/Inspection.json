@@ -1,0 +1,46 @@
+{
+  "name": "Inspection",
+  "fields": [
+    {
+      "fieldName": "startDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "inspectionReport",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "theoreticalDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "plannedDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "actor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inspectionStatus",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "inspection",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "imtBackoffice",
+    "imtGateway"
+  ]
+}
