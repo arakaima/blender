@@ -1,0 +1,16 @@
+{
+  "applications": ["imtBackoffice", "imtGateway"],
+  "changelogDate": "20220920194059",
+  "databaseType": "mongodb",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "inspector_dossier",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "InspectorDossier",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

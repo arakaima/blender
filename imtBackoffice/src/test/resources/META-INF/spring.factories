@@ -1,0 +1,1 @@
+org.springframework.test.context.ContextCustomizerFactory = be.fgov.famhp.imt.backoffice.config.TestContainersSpringContextCustomizerFactory
