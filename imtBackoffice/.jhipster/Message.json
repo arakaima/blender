@@ -1,0 +1,18 @@
+{
+  "applications": ["imtBackoffice"],
+  "changelogDate": "20220920204049",
+  "clientRootFolder": "imtBackoffice",
+  "databaseType": "mongodb",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "message",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "imtBackoffice",
+  "name": "Message",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

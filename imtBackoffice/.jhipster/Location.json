@@ -1,0 +1,31 @@
+{
+  "applications": ["imtBackoffice"],
+  "changelogDate": "20220920203549",
+  "clientRootFolder": "imtBackoffice",
+  "databaseType": "mongodb",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "location",
+  "fields": [
+    {
+      "fieldName": "activeRequest",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "headQuarters",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "imtBackoffice",
+  "name": "Location",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

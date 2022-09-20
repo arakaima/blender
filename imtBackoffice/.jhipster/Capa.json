@@ -1,0 +1,18 @@
+{
+  "applications": ["imtBackoffice"],
+  "changelogDate": "20220920205349",
+  "clientRootFolder": "imtBackoffice",
+  "databaseType": "mongodb",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "capa",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "imtBackoffice",
+  "name": "Capa",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

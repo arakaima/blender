@@ -1,0 +1,39 @@
+{
+  "applications": ["imtBackoffice"],
+  "changelogDate": "20220920204649",
+  "clientRootFolder": "imtBackoffice",
+  "databaseType": "mongodb",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "dossier_status",
+  "fields": [
+    {
+      "fieldName": "nameFr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameNl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameDe",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deprecated",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "imtBackoffice",
+  "name": "DossierStatus",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

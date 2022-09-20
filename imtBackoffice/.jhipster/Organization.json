@@ -1,0 +1,31 @@
+{
+  "applications": ["imtBackoffice"],
+  "changelogDate": "20220920204749",
+  "clientRootFolder": "imtBackoffice",
+  "databaseType": "mongodb",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "organization",
+  "fields": [
+    {
+      "fieldName": "organizationName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bce",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "imtBackoffice",
+  "name": "Organization",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

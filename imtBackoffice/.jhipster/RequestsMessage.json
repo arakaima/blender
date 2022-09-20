@@ -1,0 +1,35 @@
+{
+  "applications": ["imtBackoffice"],
+  "changelogDate": "20220920203649",
+  "clientRootFolder": "imtBackoffice",
+  "databaseType": "mongodb",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "requests_message",
+  "fields": [
+    {
+      "fieldName": "requestId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "datetime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "message",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "author",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "imtBackoffice",
+  "name": "RequestsMessage",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

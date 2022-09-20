@@ -1,0 +1,35 @@
+{
+  "applications": ["imtBackoffice"],
+  "changelogDate": "20220920204249",
+  "clientRootFolder": "imtBackoffice",
+  "databaseType": "mongodb",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "site",
+  "fields": [
+    {
+      "fieldName": "activityId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activityName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "imtBackoffice",
+  "name": "Site",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

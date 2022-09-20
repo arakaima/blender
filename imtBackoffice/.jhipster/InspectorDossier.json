@@ -1,0 +1,43 @@
+{
+  "applications": ["imtBackoffice"],
+  "changelogDate": "20220920204949",
+  "clientRootFolder": "imtBackoffice",
+  "databaseType": "mongodb",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "inspector_dossier",
+  "fields": [
+    {
+      "fieldName": "inspectorId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dossierId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inspectorRole",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expertId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numberOfDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "inspectorEmployer",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "imtBackoffice",
+  "name": "InspectorDossier",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
