@@ -1,0 +1,38 @@
+{
+  "name": "Dossier",
+  "fields": [
+    {
+      "fieldName": "dossierNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dossierType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dossierStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inspectionEntity",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "dossier",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "imtBackoffice",
+    "imtGateway"
+  ]
+}

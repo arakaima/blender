@@ -1,0 +1,34 @@
+{
+  "name": "RequestsMessage",
+  "fields": [
+    {
+      "fieldName": "requestId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "datetime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "message",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "author",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "requests_message",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "imtBackoffice",
+    "imtGateway"
+  ]
+}
