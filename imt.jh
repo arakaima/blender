@@ -1,0 +1,90 @@
+application {
+  config {
+    applicationType microservice
+    authenticationType oauth2
+    baseName imtBackoffice
+    packageName be.fgov.famhp.imt.backoffice
+    buildTool maven
+    cacheProvider hazelcast
+    clientPackageManager npm
+    databaseType mongodb
+    devDatabaseType mongodb
+    prodDatabaseType mongodb
+    searchEngine false
+    enableSwaggerCodegen false
+    enableHibernateCache false
+    serverPort 8091
+    serviceDiscoveryType eureka
+    dtoSuffix DTO
+    websocket false
+    enableTranslation true
+  }
+  }
+application {
+  config {
+    applicationType microservice
+    authenticationType oauth2
+    baseName imtOutbox
+    packageName be.fgov.famhp.imt.outbox
+    buildTool maven
+    cacheProvider hazelcast
+    clientPackageManager npm
+    databaseType mongodb
+    devDatabaseType mongodb
+    prodDatabaseType mongodb
+    searchEngine false
+    enableSwaggerCodegen false
+    enableHibernateCache false
+    serverPort 8092
+    serviceDiscoveryType eureka
+    dtoSuffix DTO
+    websocket false
+    enableTranslation true
+  }
+}
+application {
+  config {
+    applicationType microservice
+    authenticationType oauth2
+    baseName imtProxy
+    packageName be.fgov.famhp.imt.proxy
+    buildTool maven
+    cacheProvider hazelcast
+    clientPackageManager npm
+    databaseType mongodb
+    devDatabaseType mongodb
+    prodDatabaseType mongodb
+    searchEngine false
+    enableSwaggerCodegen false
+    enableHibernateCache false
+    serverPort 8094
+    serviceDiscoveryType eureka
+    dtoSuffix DTO
+    websocket false
+    enableTranslation true
+  }
+}
+application {
+  config {
+    applicationType gateway
+    authenticationType jwt
+    baseName imtGateway
+    packageName be.fgov.famhp.imt.gateway
+    buildTool maven
+    cacheProvider no
+    clientPackageManager npm
+    databaseType mongodb
+    devDatabaseType mongodb
+    prodDatabaseType mongodb
+    searchEngine false
+    enableSwaggerCodegen false
+    enableHibernateCache false
+    serverPort 8080
+    serviceDiscoveryType eureka
+    dtoSuffix DTO
+    websocket false
+    enableTranslation false
+    nativeLanguage en
+  }
+  }
+
